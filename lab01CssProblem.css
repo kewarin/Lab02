@@ -8,7 +8,7 @@ h1{
     color: blue;
 }
 /*Make all <li> elements in the shade of hexadecimal blue*/
-li{
+ul{
     color: #2ea0a8;
 }
 /*Paragraph background to orange*/
@@ -21,12 +21,21 @@ h3{
 }
 /*Give everything with <abbr> bold and underlined*/
 abbr{
-    
+    font-weight: bold; text-decoration: underline;
 }
 /*Give elements with class "explanation" red*/
-
+.explanation{
+    color: red;
+}
 /*Give <p> in id "zen-benefits" pink background*/
-
+#zen-benefits p{ 
+    background-color: pink;
+}
 /*Make <li> adjacent to <h2> red background*/
-
+h2, h2 ~ ul {
+    background-color: red;
+}
 /*Give <em> inside <p> red and bold*/
+p em{
+    color: red; border-style: bold;
+}
